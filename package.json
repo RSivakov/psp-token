@@ -1,0 +1,16 @@
+{
+  "name": "psp-token",
+  "version": "1.0.0",
+  "description": "ParaSwap PSP Token",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile"
+  },
+  "repository": "https://github.com/paraswap/psp-token.git",
+  "author": "Jason Raymond Bell <jason@epixxware.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "hardhat": "^2.6.7"
+  }
+}
