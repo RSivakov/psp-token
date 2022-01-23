@@ -24,10 +24,6 @@ contract PSP_ERC20 is ERC20Capped, ERC20Permit, AccessControlEnumerable {
         super._mint(account, amount);
     }
 
-    function getMinterSupply(address minter) external view returns (Supply memory) {
-        return minterSupply[minter];
-    }
-
     function mint(address to, uint256 amount) external onlyRole(MINTER_ROLE) returns (bool) {
         Supply storage s = minterSupply[msg.sender];
         s.total += amount;
